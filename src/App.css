@@ -1,0 +1,15 @@
+@keyframes pulseBlur {
+  0%, 100% {
+    backdrop-filter: blur(6px);
+    opacity: 0.6;
+  }
+  50% {
+    backdrop-filter: blur(12px);
+    opacity: 0.3;
+  }
+}
+
+.animate-pulse-blur {
+  animation: pulseBlur 6s ease-in-out infinite;
+  pointer-events: none;
+}
